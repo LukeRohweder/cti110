@@ -1,21 +1,27 @@
-Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
-help
-Type help() for interactive help, or help(object) for help about object.
-help()
+#cti 11-
+#P4HW1
+#Luke Rohweder
+#11/1/2022
 
-Welcome to Python 3.10's help utility!
+#Ask the user for 6 grades for the 6 modules.
+#Add them to a list.
 
-If this is your first time using Python, you should definitely check out
-the tutorial on the internet at https://docs.python.org/3.10/tutorial/.
+grades = []
 
-Enter the name of any module, keyword, or topic to get help on writing
-Python programs and using Python modules.  To quit this help utility and
-return to the interpreter, just type "quit".
+for grade in range(6):
+    grade = int(input("Enter grade: "))
+    grades.append(grade)
+                
+print("The grade are: ", grades)
+#max (grades) and min(grades)
+#to show lowest and highest in the list
+print("Highest grade is: ", max(grades))
+print("Lowest grade is: ", min(grades))
 
-To get a list of available modules, keywords, symbols, or topics, type
-"modules", "keywords", "symbols", or "topics".  Each module also comes
-with a one-line summary of what it does; to list the modules whose name
-or summary contain a given string such as "spam", type "modules spam".
-
-help> 
+total = sum(grades)
+count= len(grades)
+average = total/count
+print("Total is: ", total)
+print("Count is: ", count)
+print("Average is: ", average)
+    
